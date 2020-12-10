@@ -9,6 +9,6 @@ RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get update -y
 RUN apt-get install -y nodejs 
 RUN npm install -g react-360-cli
-RUN react-360 init Hello360
+RUN react-360 init Hello360 --force
 WORKDIR $APP_HOME/Hello360
 CMD npm start
